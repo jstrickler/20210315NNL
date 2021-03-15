@@ -56,6 +56,36 @@ for char in m:
     print(char)
 print()
 
+print(len(cities), min(cities), max(cities))
+print(sorted(cities))
+print()
+
+
+for i, city in enumerate(cities):
+    print(i, city)
+
+print(list(enumerate(cities)))
+
+enum_cities = enumerate(cities)
+cities.append('Durham')
+
+print(type(enum_cities))
+
+for i, city in enum_cities:
+    print(i, city)
+print()
+
+for i in range(3):
+    print(i)
+print()
+
+for i in range(1, 11):
+    print(i)
+
+for i in range(5, 101, 5):
+    print(i, end=' ')
+print("\n\n")
+
 
 
 
