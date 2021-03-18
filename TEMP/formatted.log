@@ -1,0 +1,12 @@
+root 2021-03-17 13:53:48,299 INFO this is information
+root 2021-03-17 13:53:48,299 WARNING this is a warning
+root 2021-03-17 13:53:48,299 INFO this is information
+root 2021-03-17 13:53:48,299 CRITICAL this is critical
+root 2021-03-17 13:54:11,144 INFO this is information
+root 2021-03-17 13:54:11,144 WARNING this is a warning
+root 2021-03-17 13:54:11,144 INFO this is information
+root 2021-03-17 13:54:11,144 CRITICAL this is critical
+root 2021-03-17 13:54:16,909 INFO this is information
+root 2021-03-17 13:54:16,909 WARNING this is a warning
+root 2021-03-17 13:54:16,909 INFO this is information
+root 2021-03-17 13:54:16,909 CRITICAL this is critical

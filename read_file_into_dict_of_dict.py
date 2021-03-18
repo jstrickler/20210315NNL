@@ -1,3 +1,6 @@
+"""
+Demo showing how to read a text file into a dictionary.
+"""
 from pprint import pprint
 
 knight_data = {}
