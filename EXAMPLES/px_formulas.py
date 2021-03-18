@@ -3,12 +3,12 @@ import openpyxl as px
 
 def main():
     """program entry point"""
-    wb = px.load_workbook('../DATA/presidents.xlsx', guess_types=True)
+    wb = px.load_workbook('../DATA/presidents.xlsx')
     ws = wb['US Presidents']
 
     add_age_at_inauguration(ws)
 
-    wb.save('presidents2.xlsx')
+    wb.save('presidents8.xlsx')
 
 def add_age_at_inauguration(ws):
     """Add a new column with age of inauguration"""
@@ -17,7 +17,7 @@ def add_age_at_inauguration(ws):
     ws.cell(row=1, column=new_col).value = 'Age at Inauguration'
     for row in range(2, 47):
         new_cell = ws.cell(row=row, column=new_col)
-        new_cell.value = '=(H{0}-D{0})/365.25'.format(row)
+        new_cell.value = '=datedif(D{0},H{0}, "y")'.format(row)
         new_cell.number_format = '0.0'
 
 

@@ -5,6 +5,7 @@ def main():
     wb = px.load_workbook('../DATA/presidents.xlsx')
     ws = wb.active  # <.>
     headers = next(ws.values)   # <.>
+    print(f"headers: {headers}")
     for row in ws.values:  # <.>
         print(row[:5])   # <.>
 
