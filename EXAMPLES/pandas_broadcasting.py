@@ -3,7 +3,7 @@ import pandas as pd
 from printheader import print_header
 
 cols = ['alpha', 'beta', 'gamma', 'delta', 'epsilon']  # <1>
-index = pd.date_range('2013-01-01 00:00:00', periods=6, freq='D')  # <2>
+index = pd.date_range('2021-03-01', periods=6, freq='D')  # <2>
 
 print(index, "\n")
 
@@ -29,3 +29,4 @@ print_header("Multiply column gamma by 1.5")
 df['gamma'] *= 1.5  # <6>
 print(df)
 print()
+print(df['delta']['2021-03-03':'2021-03-03'])

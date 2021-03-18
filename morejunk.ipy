@@ -1,8 +1,8 @@
 # coding: utf-8
-get_ipython().run_line_magic('lsmagic', '')
-get_ipython().run_line_magic('pinfo', 'loadpy')
-get_ipython().run_line_magic('pinfo', 'load')
-get_ipython().run_line_magic('load', 'play_cards.py')
+lsmagic
+loadpy?
+load?
+load play_cards.py
 # %load play_cards.py
 from carddeck import CardDeck
 from jokerdeck import JokerDeck
@@ -42,3 +42,11 @@ for i in range(10):
     print(j1.deal())
     
     
+loadpy?
+lsmagic
+save?
+save myscript 1-10
+history
+history?
+history -n
+save junk 1-17

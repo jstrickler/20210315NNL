@@ -50,3 +50,13 @@ print(s4.max(), s4.min(), s4.max() - s4.min(), '\n')  # <12>
 s = pd.Series([5, 10, 15], ['a', 'b', 'c'])  # <13>
 print("creating series with index")
 print(s)
+
+
+print(s1['b'], s1['j'], s2[3], s2[5])
+new_series = s2.drop([3, 4])
+print(new_series)
+s2.drop([3, 4], inplace=True)
+print(s2)
+
+print(s2[6])
+print(s2.iloc[6])

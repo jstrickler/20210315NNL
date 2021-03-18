@@ -42,3 +42,10 @@ for i in range(10):
     print(j1.deal())
     
     
+get_ipython().run_line_magic('pinfo', 'loadpy')
+get_ipython().run_line_magic('lsmagic', '')
+get_ipython().run_line_magic('pinfo', 'save')
+get_ipython().run_line_magic('save', 'myscript 1-10')
+get_ipython().run_line_magic('history', '')
+get_ipython().run_line_magic('pinfo', 'history')
+get_ipython().run_line_magic('history', '-n')

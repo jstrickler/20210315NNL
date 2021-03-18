@@ -34,3 +34,12 @@ print()
 print_header("df[['alpha','epsilon','beta']]['b':'e']")
 print(df[['alpha', 'epsilon', 'beta']]['b':'e'])  # <9>
 print()
+
+# scalar (single) value : select column
+# slice: select row(s)
+# interable: select multiple columns
+
+
+
+
+

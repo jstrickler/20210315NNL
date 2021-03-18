@@ -1,6 +1,6 @@
 import numpy as np
-
-a = np.array([[1, 2.1, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]])  # <1>
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]]
+a = np.array(data)  # <1>
 print(a)
 print("# dims", a.ndim)  # <2>
 print("shape", a.shape)  # <3>

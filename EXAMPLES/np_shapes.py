@@ -2,7 +2,7 @@
 import numpy as np
 
 a1 = np.arange(15)  # <1>
-print("a1 shape", a1.shape)  # <2>
+print("a1 shape and # dimensions", a1.shape, a1.ndim)  # <2>
 print()
 
 print(a1)

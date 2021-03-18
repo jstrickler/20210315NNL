@@ -32,3 +32,7 @@ print(df1 + df2)  # <5>
 
 print_header('df1.add(df2, fill_value=0)')
 print(df1.add(df2, fill_value=0))  # <6>
+print('-' * 60)
+print(df1.info(memory_usage='deep'))
+print('-' * 60)
+print(df1.describe())

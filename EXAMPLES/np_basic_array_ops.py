@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import numpy as np
+from numpy import linalg as la
 
 a = np.array(
     [
@@ -27,9 +28,16 @@ print("a * 10")
 print(a * 10)  # <3>
 print()
 
-print("a + b")
-print(a + b)  # <4>
+print("a * b")
+print(a * b)  # <4>
 print()
+
+print("a @ b")
+print(a @ b)  # <4>
+print()
+
+# result = la.cholesky(a)
+# print("cholesky:", result)
 
 print("b + 3")
 print(b + 3)  # <5>
